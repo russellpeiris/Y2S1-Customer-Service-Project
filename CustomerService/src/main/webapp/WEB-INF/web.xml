@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>newticket</servlet-name>
+		<servlet-class>com.customerservice.TicketSubmit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>newticket</servlet-name>
+		<url-pattern>/createticket</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>updateticket</servlet-name>
+		<servlet-class>com.customerservice.TicketUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateticket</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteticket</servlet-name>
+		<servlet-class>com.customerservice.TicketDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteticket</servlet-name>
+		<url-pattern>/deletetkt</url-pattern>
+	</servlet-mapping>
+</web-app>
